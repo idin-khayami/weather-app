@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: container should match the snapshot 1`] = `
+<div
+  class="container"
+  data-testid="testingContainer"
+>
+  Content
+</div>
+`;

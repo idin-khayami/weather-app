@@ -10,7 +10,7 @@
 
 .title {
   color: $whiteColor; 
-  font-size: 36px;
-  font-weight: 900;
+  font-size: $large;
+  font-weight: $bold;
   @include flex(row, flex-start, center);
 }

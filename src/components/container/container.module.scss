@@ -1,0 +1,26 @@
+@import '../../styles/vars';
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+
+  @include media-query-min($sm) {
+    max-width: $sm;
+  }
+
+  @include media-query-min($md) {
+    max-width: $md;
+  }
+
+  @include media-query-min($lg) {
+    max-width: $lg;
+  }
+
+  @include media-query-min($xl) {
+    max-width: $xl;
+  }
+
+  @include media-query-min($xxl) {
+    max-width: $xxl;
+  }
+}

@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 
+import { Container } from '@/components/container';
 import { ComponentBaseProps } from '@/types/global.types';
 import { paths } from '@/utils/paths';
 
@@ -14,9 +15,11 @@ export const Header = ({ dataTestId, className }: HeaderProps) => {
       data-testid={dataTestId}
       className={clsx([styles.header, className])}
     >
-      <Link href={paths.homepage}>
-        <p className={styles.title}>React Weather</p>
-      </Link>
+      <Container>
+        <Link href={paths.homepage}>
+          <p className={styles.title}>React Weather</p>
+        </Link>
+      </Container>
     </header>
   );
 };
