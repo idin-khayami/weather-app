@@ -1,0 +1,12 @@
+@mixin media-query-min($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin flex($dir: row, $jus: center, $al: center) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jus;
+  align-items: $al;
+}

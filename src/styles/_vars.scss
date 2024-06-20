@@ -5,8 +5,23 @@ $blackColor: #000000;
 $regular: 1rem;
 $large: 2.25rem;
 
+$bold: 900;
+
 /* Button style */
 $buttonForeground: #F48403;
 $buttonBackground: #C4C4C4;
 $buttonGradient: linear-gradient(180deg, rgba(196, 196, 196, 0.2), rgba(196, 196, 196, 0.09), rgba(196, 196, 196, 0));
 $buttonPadding: 0.5rem;
+
+/* Header style */
+$headerColor: #ffffff;
+$headerBackground: #232229;
+
+
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+@import './mixins';
