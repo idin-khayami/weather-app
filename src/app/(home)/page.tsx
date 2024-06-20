@@ -1,13 +1,7 @@
-// app/page.tsx
-import React from 'react';
-import HelloWorld from '@/components/HelloWorld';
-
-const Home: React.FC = () => {
+export default function Home() {
   return (
-    <div>
-      <HelloWorld />
-    </div>
+    <main>
+      <h1>Hello World</h1>
+    </main>
   );
-};
-
-export default Home;
+}
