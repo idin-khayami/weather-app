@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: error component should render error by default 1`] = `
+<div
+  class="error"
+  data-testid="testingError"
+>
+  <p>
+    Something went wrong!, please try again.
+  </p>
+</div>
+`;

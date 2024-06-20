@@ -1,0 +1,13 @@
+@import '../../styles/vars';
+
+.error {
+  padding: 1rem;
+  border: 2px solid $dangerColor;
+  background-color: rgba($dangerColor, 0.4);
+  border-radius: 10px;
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
