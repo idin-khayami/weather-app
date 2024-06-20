@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: loading component should match the snapshot with loading state 1`] = `
+<p
+  data-testid="testingLoading"
+>
+  Loading ...
+</p>
+`;
+
+exports[`Component: loading component should match the snapshot without loading state 1`] = `null`;
