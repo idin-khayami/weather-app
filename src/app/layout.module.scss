@@ -1,0 +1,24 @@
+@import '../styles/vars';
+
+.body {
+  background-color: $background;
+  @include media-query-min($sm) {
+    padding-bottom: 85px;
+  }
+}
+
+.notFound {
+  text-align: center;
+  @include flex(column, center, center);
+  height: calc(100vh - 200px);
+  gap: 0.6rem;
+
+  .link {
+    color: $whiteColor;
+    font-weight: $bold;
+    padding: 1rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

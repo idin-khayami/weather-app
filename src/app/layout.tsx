@@ -1,5 +1,11 @@
+import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+
+import '@/styles/globals.scss';
+import { Header } from '@/components/header';
+
+import styles from './layout.module.scss';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={clsx(inter.className, styles.body)}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
