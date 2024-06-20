@@ -1,0 +1,20 @@
+@import '../../styles/vars.module';
+
+.buttonBase {
+  border: none;
+  display: flex;
+  min-width: 50px;
+  min-height: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: $buttonPadding;
+  border-radius: 10px;
+  font-size: $large;
+  font-weight: 900;
+  background: $buttonGradient;
+  color: $buttonForeground;
+  aspect-ratio: 1; /* Ensures the button remains square */
+  &:hover {
+    cursor: pointer;
+  }
+}

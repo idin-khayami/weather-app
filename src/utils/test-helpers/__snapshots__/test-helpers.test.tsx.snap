@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Utils: test-helpers renderWithUserSetup should have rendered component correctly 1`] = `
+<div
+  data-testid="sampleDiv"
+>
+  Hello StuDocu
+</div>
+`;
