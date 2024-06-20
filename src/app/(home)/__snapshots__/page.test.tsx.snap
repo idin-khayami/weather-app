@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page: homepage should have valid snapshot 1`] = `
+<main
+  data-testid="homepage"
+>
+  <h1>
+    Hello World
+  </h1>
+</main>
+`;
