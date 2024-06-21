@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: error-message should match the snapshot with default params 1`] = `
+<p
+  class="errorMessage"
+  data-testid="testingErrorMessage"
+/>
+`;
+
+exports[`Component: error-message should match the snapshot with specified error message 1`] = `
+<p
+  class="errorMessage"
+  data-testid="testingErrorMessage"
+>
+  Oops! there was an error!
+</p>
+`;
