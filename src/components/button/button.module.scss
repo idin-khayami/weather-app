@@ -12,7 +12,7 @@
   font-size: $large;
   font-weight: 900;
   background: $buttonGradient;
-  color: $buttonForeground;
+  color: $secondaryColor;
   aspect-ratio: 1; /* Ensures the button remains square */
   &:hover {
     cursor: pointer;

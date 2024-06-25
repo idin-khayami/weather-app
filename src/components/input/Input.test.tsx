@@ -1,8 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-
 import { Input } from '@/components/input';
 
-describe('Component: input component', () => {
+describe('Component: Input component', () => {
   it('should render', () => {
     const mockFn = jest.fn();
 
@@ -82,5 +81,29 @@ describe('Component: input component', () => {
     );
 
     expect(screen.getByTestId('testingInput')).toHaveClass('invalid');
+  });
+
+  it('should call onBlur when input loses focus', () => {
+    const mockOnChange = jest.fn();
+    const mockOnBlur = jest.fn();
+
+    render(
+      <Input
+        name="email"
+        type="email"
+        dataTestId="testingInput"
+        value="sample@gmail.com"
+        placeholder="insert value here"
+        onChange={mockOnChange}
+        onBlur={mockOnBlur}
+      />,
+    );
+
+    const input = screen.getByTestId('testingInput');
+
+    fireEvent.blur(input, { target: { value: 'sample@gmail.com' } });
+
+    expect(mockOnBlur).toHaveBeenCalled();
+    expect(mockOnBlur).toHaveBeenLastCalledWith('sample@gmail.com');
   });
 });

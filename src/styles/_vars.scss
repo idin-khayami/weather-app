@@ -1,4 +1,6 @@
-$background: #2C2930;
+$primaryBackgroundColor: #2C2930;
+$secondaryBackgroundColor: #232229;
+$primaryTextColor: #F48403;
 $whiteColor: #ffffff;
 $blackColor: #000000;
 $dangerColor: red;
@@ -9,17 +11,9 @@ $large: 2.25rem;
 $bold: 900;
 
 /* Button style */
-$buttonForeground: #F48403;
-$buttonBackground: #C4C4C4;
 $buttonGradient: linear-gradient(180deg, rgba(196, 196, 196, 0.2), rgba(196, 196, 196, 0.09), rgba(196, 196, 196, 0));
 $buttonPadding: 0.5rem;
 
-/* Header style */
-$headerColor: #ffffff;
-$headerBackground: #232229;
-
-/* Input style */
-$inputBackground: #232229;
 
 
 $sm: 640px;

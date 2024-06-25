@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 import { ComponentBaseProps } from '@/types/global.types';
-import { DEFAULT_ERROR_MESSAGE } from '@/utils/constants';
+import { DEFAULT_ERROR_MESSAGE } from '@/constants/error';
 
 import styles from './error.module.scss';
 

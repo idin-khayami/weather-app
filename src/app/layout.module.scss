@@ -1,7 +1,7 @@
 @import '../styles/vars';
 
 .body {
-  background-color: $background;
+  background-color: $primaryBackgroundColor;
   @include media-query-min($sm) {
     padding-bottom: 85px;
   }

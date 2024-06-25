@@ -1,3 +1,9 @@
+import { Container } from '@/components/container';
+
 export default function WeeklyWeather() {
-  return null;
+  return (
+    <div>
+      <Container>Weekly weather section</Container>
+    </div>
+  );
 }

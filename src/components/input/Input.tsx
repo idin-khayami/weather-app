@@ -13,6 +13,7 @@ interface InputProps extends ComponentBaseProps {
   placeholder?: string;
   type?: string;
   isInvalid?: boolean;
+  onBlur?: (value: string) => void;
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
@@ -26,6 +27,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
       dataTestId,
       className,
       placeholder,
+      onBlur,
     },
     ref,
   ) => {
@@ -39,6 +41,11 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         onChange={(e) => {
           if (onChange) {
             onChange(e.target.value);
+          }
+        }}
+        onBlur={(e) => {
+          if (onBlur) {
+            onBlur(e.target.value);
           }
         }}
         type={type}

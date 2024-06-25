@@ -1,3 +1,9 @@
+import { Container } from '@/components/container';
+
 export const DailyEvolution = () => {
-  return null;
+  return (
+    <div>
+      <Container>Daily evolution section</Container>
+    </div>
+  );
 };

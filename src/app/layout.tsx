@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { ReactQueryProviders } from '@/context/react-query';
 
 import '@/styles/globals.scss';
 import { Header } from '@/components/header';
@@ -23,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx(inter.className, styles.body)}>
         <Header />
-        {children}
+        <ReactQueryProviders>{children}</ReactQueryProviders>
       </body>
     </html>
   );

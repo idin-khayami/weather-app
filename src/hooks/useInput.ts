@@ -12,6 +12,8 @@ export interface UseInputReturn {
   validate: () => boolean;
   isValid?: boolean;
   errorMessage?: string;
+  touched: boolean;
+  setTouched: (touched: boolean) => void;
 }
 
 export function useInput({
@@ -23,18 +25,17 @@ export function useInput({
   const defaultRef = useRef<HTMLInputElement>(null);
   const inputRef = ref ?? defaultRef;
   const [isValid, setIsValid] = useState<boolean | undefined>(undefined);
+  const [touched, setTouched] = useState<boolean>(false);
 
   useEffect(() => {
     if (inputRef.current) {
-      inputRef.current.defaultValue = initialValue;
+      inputRef.current.value = initialValue;
     }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [initialValue, inputRef]);
 
   const validate = () => {
-    if (validator) {
-      const validationResult = validator(inputRef?.current?.value);
+    if (validator && inputRef.current) {
+      const validationResult = validator(inputRef.current.value);
 
       setIsValid(validationResult);
 
@@ -47,7 +48,9 @@ export function useInput({
   return {
     ref: inputRef,
     isValid,
-    errorMessage: isValid ? '' : errorMessage,
+    errorMessage: touched && !isValid ? errorMessage : '',
     validate,
+    touched,
+    setTouched,
   };
 }

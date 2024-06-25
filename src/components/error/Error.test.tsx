@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 
 import { Error } from '@/components/error/Error';
-import { DEFAULT_ERROR_MESSAGE } from '@/utils/constants';
+import { DEFAULT_ERROR_MESSAGE } from '@/constants/error';
 
 describe('Component: error component', () => {
   it('should render error by default', () => {
